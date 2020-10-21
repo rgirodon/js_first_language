@@ -1,0 +1,4 @@
+npm init -y
+
+npm install lodash
+
