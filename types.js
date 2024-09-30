@@ -1,19 +1,19 @@
-let nom = 'Rémy Girodon';
+let nom = "Rémy Girodon";
 
-let age = 42;
+let age = 46;
 
 let estMajeur = true;
 
-let hobbys = ['Football', 'Lecture', 'Musique'];
+let hobbys = ['Cuisine', 'Football', 'Lecture', 'Musique', 'Cinéma'];
 
-let msg = 'Nom : ' + nom;
+let childrenAge = [13, 16];
 
-msg += '<br>';
+let msg = '<p>Nom : ' + nom + "</p>";
 
-msg += 'Age : ' + age;
+msg += '<p>Age : ' + age + "</p>";
 
-msg += '<br>';
+msg += '<p>Hobby préféré : ' + hobbys[0] + "</p>";
 
-msg += 'Hobby préféré : ' + hobbys[0];
+msg += "<p>Age des enfants : " + childrenAge[0] + " - " + childrenAge[1] + "</p>";
 
 document.body.innerHTML = msg;

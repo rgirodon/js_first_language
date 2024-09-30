@@ -1,8 +1,9 @@
+/*
 // exo 1
 
-let a = parseInt(prompt('1er Nombre ?'));
+let a = 12;
 
-let b = parseInt(prompt('2nd Nombre ?'));
+let b = 24;
 
 let outputExo1 = '';
 
@@ -16,35 +17,57 @@ else {
     outputExo1 = 'Le 1er nombre est supérieur au 2nd nombre';
 }
 
-document.body.textContent = outputExo1;
+document.body.innerHTML = outputExo1;
+*/
 
-
+/*
 // exo 2
 
-let correctAnswer = 7;
+let num = 1;
 
-let userAnswer = parseInt(prompt('Entrez un nombre entre 0 et 10'));
+let message = '';
 
-while (userAnswer != correctAnswer) {
+while (num <= 100) {
 
-    userAnswer = parseInt(prompt('Faux ! Entrez un nombre entre 0 et 10'));
+    message = message + num + ' ';
+
+    num = num * 2;
 }
 
-let output = 'Correct ! La bonne réponse était effectivement ' + correctAnswer;
+document.body.innerHTML = message;
+*/
 
-document.body.textContent = output;
 
+/*
 // exo 3
 
 let chiffres = [10, 15, 20, 15, 14, 8];
 
 let sum = 0;
 
-for (currentChiffre of chiffres) {
+for (let currentChiffre of chiffres) {
 
     sum = sum + currentChiffre;
 }
 
 let output = 'Somme = ' + sum;
 
-document.body.textContent = output;
+document.body.innerHTML = output;
+*/
+
+/*
+// exo 4
+
+let firstnames = ['Riri', 'Fifi', 'Loulou'];
+
+let message = '';
+
+for (let currentFirstname of firstnames) {
+
+    message = message + currentFirstname + " ";
+}
+
+let output = 'Family = ' + message;
+
+document.body.innerHTML = output;
+*/
